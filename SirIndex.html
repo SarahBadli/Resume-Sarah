@@ -1,0 +1,194 @@
+<html>
+  <html>
+
+  <head>
+  <title> Personal Website </title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: rgb(130, 238, 53);
+      margin: 50;
+      padding: 50:
+
+    }
+    header{
+      background-color: rgb(211, 143, 16);
+      color: black;
+      text-align:center:
+      pad: 50px;
+
+    }
+
+    header h1 {
+      font-size: 35px;
+    }
+    nav{
+      background-color: blue;
+      text-align: center;
+      padding: 10;
+    }
+nav a{
+  color: aliceblue;
+  text-decoration: solid;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  color :rgb(45, 167, 212)
+  font-size: 24px;
+
+}
+
+img{
+
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+footer{
+  background-color: chartreuse;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+  </style>
+  </head>
+  
+  <body>
+      <header>
+  <h1>Selamat Datang ke Laman Web Saya</h1>
+  
+  <nav>
+      <a href="biodata.html">Biodata</a>
+      <a href="pengalaman.html">Pengalaman</a>
+      <a href="pendidikan.html">Pendidikan</a>
+      <a href="keluarga.html">Keluarga</a>
+      <a href="gallery.html">Galeri</a>
+      <a href="audiovideo.html">Audio & Video</a>
+      <a href="contact.html">Hubungi Kami</a>
+  </nav>
+  </header>
+  
+  <section id="biodata">
+        <div class="center">
+      <img src="sticker.jpg" width="300" height="300">
+      </div>
+  </div>
+  <h2>Biodata</h2>
+  <p>Nama : </p>
+  <p>Alamat : </p>
+  <p>Nombor Telefon : 0124339202</p>
+  </section>
+  
+  <section id="experience">
+  <h2>Pengalaman</h2>
+  <p>Pengalaman Kerja :</p>
+  <ul>
+  <li>Penolong Eksekutif, HaloTelco Corporation (2020-Current)</li>
+  <li>Social Media Marketing, PadooInsta (2022-Current)</li>
+  </ul>
+  <br>
+  <p>Aktiviti Sukarela</p>
+  <ul>
+  <li>Pengerusi Kelab Sofbol Sekolah (2014)</li>
+  <li>AJK Kelab Bahasa Inggeris (2016-2018)</li>
+  </ul>
+  </section>
+  
+  <section id="education">
+  <h2>Pendidikan</h2>
+  <p>Tingkatan : Diploma Pengurusan Maklumat</p>
+  <p>Institusi : Universiti Teknologi MARA</p>
+  <p>Tahun Tamat : 2024</p>
+  </section>
+  
+  <section id="family">
+  <h2>Keluarga</h2>
+  <p>Ibu : </p>
+  <p>Bapa : </p>
+  <p>Adik-beradik : </p>
+      <ul>
+          <li></li>
+      </ul>
+  </section>
+  
+  <section id="gallery">
+  <h2>Galeri</h2>
+  <img src="images">
+  
+  <img src="images">
+  
+  <img src="images">
+  </section>
+  
+  <section id="audio-video">
+  <h2>Audio and Video</h2>
+  <div class="image-container">
+  <audio controls>
+      <source src="NewJeans 'New Jeans (ft. The Powerpuff Girls)' Lyrics (뉴진스 New Jeans 가사) (Color Coded Lyrics).mp3" type="audio/mp3">
+  </audio>
+  
+  <video width="400" controls>
+      <source src="newjeans bubble gum.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  </div>
+  </section>
+  
+  <section id="contact-form">
+      <h2>Hubungi Saya</h2>
+      <form action="#" method="POST" id="contact-form">   
+      </form>
+  
+      <div class="form-group">
+          <label for="username">Username : </label>
+          <input type="text" id="username" name="username" required>
+      </div>
+  
+      <div class="form-group">
+          <label for="password">Password : </label>
+          <input type="password" id="password" name="password" required>
+      </div>
+  
+      <input type="hidden" name="hiddenField" value="hiddenValue">
+  
+      <div class="form-group">
+          <label for="message">Message : </label>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+      </div>
+  
+  
+  <div class="form-group">
+      <label>Jantina: </label>
+      <input type="radio" id="male" name="gender" value <!-- Dropdown Menu -->
+      <div class="form-group">
+      <label for="country">Negara:</label> <select id="country" name="country" required> <option value="malaysia">Malaysia</option> <option value="singapore">Singapura</option> <option value="brunei">Brunei</option> </select>
+      </div>
+  
+          <div class="form-group">
+              <label for="file">Pilih fail:</label>
+              <input type="file" id="file" name="file">
+              </div>
+  
+              <div class="form-group">
+              <label for="email">Emel:</label>
+              <input type="email" id="email" name="email" required> </div>
+  
+              <div class="form-group">
+              <input type="submit" value="Hantar"> <input type="reset" value="Semula">
+              </div>
+              </form>
+              </section>
+  
+  </body> 
+  <footer>
+  &copy; 2024 Laman Web Saya. Hak cipta terpelihara.
+  </footer>
+  
+  </html>

@@ -1,0 +1,137 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* General styles */
+body, h1, h2, h3, h4, h5, h6, .navbar, .card-title, .card-text {
+    font-family: 'Press Start 2P', cursive;
+    color: #7eabef;
+    text-shadow: 1px 1px 0 #4e7fc7;
+    background-color: #000000;
+}
+
+li {
+    background-color: #000000;
+    color: #3e0c3e;
+}
+
+body {
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #e4e8f0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #c0ccc0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #a0df4e;
+    border-bottom: 2px solid #f5f6f5;
+}
+
+.nav-link {
+    color: #222d36;
+}
+
+.nav-link:hover {
+    color: #ff00ff;
+}
+
+/* Home Section styles */
+#home {
+    background-image: url("background4.jpg");
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: 
+}
+
+#home h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 #f1e8e8;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+#home .btn {
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    transition: 0.3s;
+}
+
+#home .btn:hover {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+/* Education Section styles */
+#education .card {
+    background-color: #f3dada;
+    border: 2px solid #223522;
+}
+
+#portfolio .card-img-top {
+    border-bottom: 2px solid #00ff00;
+}
+
+/* About Section styles */
+#about {
+    background: linear-gradient(135deg, #004e92, #000428);
+    color: #00ff00;
+}
+
+/* Contact Section styles */
+#contact {
+    background-color: #e8e0e0;
+    color: #00ff00;
+}
+
+#contact .form-control {
+    background-color: #1a1a1a;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+}
+
+#contact .btn {
+    background-color: #00ff00;
+    color: #000000;
+    transition: 0.3s;
+}
+
+#contact .btn:hover {
+    background-color: #3e0c3e;
+    color: #765353;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: #00ff00;
+    padding: 10px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+/* Additional Retro Gaming Styles */
+.pixel-border {
+    border: 4px solid #00ff00;
+    box-shadow: 0 0 10px #daada3, inset 0 0 10px #daada3;
+}
+
+button.pixel-border, .form-control.pixel-border, .card.pixel-border {
+    transition: 0.3s;
+}
+
+button.pixel-border:hover, .form-control.pixel-border:hover, .card.pixel-border:hover {
+    box-shadow: 0 0 20px #ff00ff, inset 0 0 20px #ff00ff;
+}

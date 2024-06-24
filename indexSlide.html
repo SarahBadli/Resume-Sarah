@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Slide Info with Pictures and Text</title>
+<style>
+    /* Styling for slideshow container */
+    .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Styling for slides */
+    .slide {
+        display: none;
+        text-align: center;
+    }
+
+    /* Styling for slide content */
+    .slide-content {
+        padding: 20px;
+    }
+
+    /* Styling for slide images */
+    .slide-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Styling for next and previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Positioning for previous button */
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Positioning for next button */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Slide 1</h2>
+            <img class="slide-img" src="https://via.placeholder.com/600x300" alt="Slide 1">
+            <p>This is the content of slide 1.</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Slide 2</h2>
+            <img class="slide-img" src="https://via.placeholder.com/600x300" alt="Slide 2">
+            <p>This is the content of slide 2.</p>
+        </div>
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button class="prev" onclick="plusSlides(-1)">❮</button>
+    <button class="next" onclick="plusSlides(1)">❯</button>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+
